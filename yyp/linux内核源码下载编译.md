@@ -37,6 +37,31 @@
 
 这些依赖项负责提供编译内核时所需的基础工具和库支持。`build-essential` 提供了基本的编译器工具链，`libncurses-dev` 用于生成内核配置菜单，`bison` 和 `flex` 是用于生成语法和词法解析器的工具，而 `libssl-dev` 和 `libelf-dev` 分别提供加密支持和 `ELF `文件格式支持。
 
+
+
+-------------------------------------
+
+这里更新的时候出现过一个问题：
+
+```
+study@study-virtual-machine:~/code$ sudo apt upgrade
+正在等待缓存锁：无法获得锁 /var/lib/dpkg/lock-frontend。锁正由进程 3701（unattended-upgr）持有... 13秒
+```
+
+无法获取该缓存锁，这个进程一直运行没有结束
+
+这里使用命令`ps aux | grep -i unattended-upgr`查看进程是否正在运行
+
+发现长时间没有结束后选择直接杀死进程：
+
+`sudo kill -9 3701`
+
+之后再次运行`sudo upgrade`没有再出现缓存锁无法获取的问题
+
+-----------------------------------------------
+
+
+
 - 使用`git`拉取`linux`内核源码：`git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git`
 
 - 编译
