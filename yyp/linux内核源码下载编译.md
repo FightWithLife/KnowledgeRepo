@@ -50,6 +50,8 @@ study@study-virtual-machine:~/code$ sudo apt upgrade
 
 无法获取该缓存锁，这个进程一直运行没有结束
 
+这里通过查阅发现该进程为`sudo apt update`命令执行后的后台更新进程，一般等待几分钟可以让其完成更新，之后就会释放缓存锁了
+
 这里使用命令`ps aux | grep -i unattended-upgr`查看进程是否正在运行
 
 发现长时间没有结束后选择直接杀死进程：
@@ -57,6 +59,29 @@ study@study-virtual-machine:~/code$ sudo apt upgrade
 `sudo kill -9 3701`
 
 之后再次运行`sudo upgrade`没有再出现缓存锁无法获取的问题
+
+关于杀死进程可以使用的几个`Shell`命令:
+
+```
+1- kill
+kill命令的使用一般要搭配PID进行，此处可以使用
+ps aux | grep process_name
+获取pid号
+用法：kill PID
+有时候会遇到该进程是系统某些比较重要的组件的情况，这时候如果想杀死该进程可以使用
+kill -9 PID
+强制杀死进程
+
+2- killall
+killall命令可以杀死所有包含指定名称的进程
+用法:killall process_name
+
+3- pkill
+pkill与killall类似，可以根据进程的名称杀死进程
+用法: pkill process_name
+```
+
+
 
 -----------------------------------------------
 
