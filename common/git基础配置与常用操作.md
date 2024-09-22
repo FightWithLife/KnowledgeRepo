@@ -78,7 +78,7 @@
 
 
 
-### 连接远程仓库（已搭建）
+### 克隆远程仓库（已搭建）
 
 对于已经搭建好的远程仓库，就不需要像未搭建的那么麻烦了，只需要使用
 
@@ -86,17 +86,77 @@
 
 即可
 
+### 将本地修改同步至远程仓库
+
+- 确保本地的代码是最新的`git pull origin master`
+- 查看本地文件状态`git status`
+  - 这会显示哪些文件被修改、哪些文件未被追踪，以及哪些文件已经 staged（暂存）但尚未提交。
+
+- 将本地文件提交至暂存区：
+
+  ```
+  #单个文件
+  git add <file-name>
+  #所有修改文件
+  git add .
+  ```
+
+- 提交修改
+
+  ```
+  #单语句说明
+  git commit -m "你的修改内容"
+  #多语句说明（推荐）
+  git commit
+  #这会打开一个文件，操作类似vim，建议提交的修改内容为
+  【修改文件】xxx
+  【修改内容】xxx
+  ```
+
+- 推送至远程仓库`git push origin master`
 
 
 
+### 提交出现冲突的解决办法
+
+- 首先拉取最新的代码`git pull origin master`
+- 解决冲突：如果存在冲突，`Git `会标记出冲突的文件，提示你手动解决冲突。你需要打开冲突的文件并手动解决这些冲突。
+- 解决冲突后，根据上面的流程提交上传仓库
+
+```
+git add <file-name>
+git commit -m "解决冲突"
+git push origin master
+```
 
 
 
+### 查看远程仓库是否有更新
+
+```
+git status
+```
+
+若是远程分支有更新，会显示
+
+```
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+```
 
 
 
+查看远程分支的日志：
 
+```
+git log origin/<branch-name>
+```
 
+比较远程分支与本地的提交
+
+```
+git log <branch-name>..origin/<branch-name>#提交差异
+git diff <branch-name> origin/<branch-name>#差异
+```
 
 
 
