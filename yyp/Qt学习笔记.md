@@ -139,9 +139,24 @@ flowchart LR
 
 也就是**使用关键字`emit`触发对应信号**
 
+### 信号与槽的重载
 
+当自定义的信号和槽出现重载的情况，可以使用以下两种方式来进行`connect`函数的传参：
 
+- ![image-20241025004710564](./assets/image-20241025004710564.png)
 
+  
+
+- ![image-20241025004832629](./assets/image-20241025004832629.png)
+
+  其中代码的详细内容为：
+
+  ```
+  connect(sender, QOverload<>::of(&SenderClass::hungry), receiver, &ReceiverClass::slotFunction);
+  connect(sender, QOverload<QString>::of(&SenderClass::hungry), receiver, &ReceiverClass::slotFunction);
+  ```
+
+  
 
 
 
@@ -281,17 +296,126 @@ public:
 
 
 
+## 函数重载
+
+**函数重载**（Function Overloading）是C++中一种多态性的实现方式，它允许在同一个作用域中定义多个**同名但参数列表不同**的函数。编译器通过**函数参数的类型和数量**来区分这些函数，从而决定调用哪一个版本。这种机制使得代码更加简洁、灵活，并提高了代码的可读性。
+
+### 函数重载的条件
+
+函数重载的实现有以下几个条件：
+
+1. 同一个作用域
+
+   ：重载的函数必须在同一个类或同一个命名空间中。
+
+2. 同名函数
+
+   ：函数的名字必须相同。
+
+3. 参数列表不同
+
+   ：参数的数量不同，或参数的类型不同。例如：
+
+   - ```
+     cpp复制代码void print(int value);
+     void print(double value);
+     void print(int value1, int value2);
+     ```
+
+   - 上述三个`print`函数是合法的重载，因为它们的参数类型和数量都不相同。
+
+### 函数重载的好处
+
+1. **代码简洁**：可以用同一个函数名处理不同类型的数据。
+2. **可读性强**：调用时通过函数名即可知道其功能，而参数的类型和数量决定了具体调用哪个版本。
+3. **提高灵活性**：可以针对不同的输入类型设计不同的处理逻辑。
 
 
 
+## 类中函数指针的定义
 
+普通的函数指针定义：
 
+```
+返回类型 (*指针名称)(参数类型1, 参数类型2, ...);
+int (*func_ptr)(int, float);
 
+//使用
+(*func_ptr)(1,1.0);
+```
 
+`C++`类中成员函数的函数指针定义：
 
+```
+返回类型 (类名::*指针名称)(参数列表);
+void (MyClass::*funcPtr)() = &MyClass::display;
+```
 
+`C++`中的使用调用比较复杂，这里使用下面的例子展示如何使用：
 
+```
+//定义类
+#include <iostream>
+using namespace std;
 
+class MyClass {
+public:
+    void display() {
+        cout << "Display function called!" << endl;
+    }
+
+    int add(int a, int b) {
+        return a + b;
+    }
+};
+
+//定义和使用无参成员函数
+int main() {
+    MyClass obj;
+
+    // 定义一个指向 MyClass 中 void display() 函数的指针
+    void (MyClass::*funcPtr)() = &MyClass::display;
+
+    // 使用成员函数指针调用函数（通过对象）
+    (obj.*funcPtr)();  // 输出：Display function called!
+
+    // 使用成员函数指针调用函数（通过对象指针）
+    MyClass* ptr = &obj;
+    (ptr->*funcPtr)();  // 输出：Display function called!
+
+    return 0;
+}
+
+//定义和使用带参成员函数
+int main() {
+    MyClass obj;
+
+    // 定义一个指向 MyClass 中 int add(int, int) 函数的指针
+    int (MyClass::*addPtr)(int, int) = &MyClass::add;
+
+    // 使用成员函数指针调用函数（通过对象）
+    int result = (obj.*addPtr)(3, 4);
+    cout << "Result: " << result << endl;  // 输出：Result: 7
+
+    // 使用成员函数指针调用函数（通过对象指针）
+    MyClass* ptr = &obj;
+    result = (ptr->*addPtr)(5, 6);
+    cout << "Result: " << result << endl;  // 输出：Result: 11
+
+    return 0;
+}
+```
+
+> [!important]
+>
+> ### 成员函数指针的注意事项
+>
+> 1. **必须使用对象或对象指针来调用**：
+>    - 成员函数指针不能像普通函数指针那样直接调用，必须使用一个具体的对象或对象指针，并使用`.*`或`->*`操作符。
+> 2. **静态成员函数不需要使用成员函数指针**：
+>    - 静态成员函数和普通的全局函数类似，可以直接使用普通函数指针来指向它们，不需要包含类的类型信息。
+> 3. **成员函数指针不支持绑定到对象**：
+>    - C++标准中的成员函数指针只包含函数的地址，不包括对象本身。因此，调用时必须显式地提供对象或对象指针。
 
 
 
