@@ -52,6 +52,12 @@
 
 ##  API介绍
 
+Qt有许多API可以使用，当有时候不知道这个API如何调用的时候可以查看帮助
+
+下面以`QPushButton`为例子：
+
+![image-20241026215017495](./assets/image-20241026215017495.png)
+
 ### 信号槽
 
 信号槽的创建使用`connect`函数
@@ -79,6 +85,88 @@ QObject::connect(btn,&QPushButton::clicked,this,&Widget::close);
 `#include <QPushButton>`
 
 ![image-20241020224414519](./assets/image-20241020224414519.png)
+
+### `QMainWindow`类
+
+`QMainWindow`是一个为用户提供主窗口程序的类，包含一个菜单栏(`menu bar`)、多个工具栏(`tool bars`)、多个链接部件(`dock widgets`)、一个状态栏(`status bar`)以及一个中心部件(`central widget`)，是许多应用程序的基础，如文本编辑器，图片编辑器等。
+
+![image-20241026203757688](./assets/image-20241026203757688.png)
+
+以`word`为例：
+
+![image-20241026204138013](./assets/image-20241026204138013.png)
+
+#### 常用API
+
+![image-20241026224850735](./assets/image-20241026224850735.png)
+
+```
+//创建菜单栏
+    QMenuBar *MenuBar = menuBar();
+    //设置菜单栏到主窗口
+    setMenuBar(MenuBar);
+
+    //添加菜单
+    QMenu *FileMenu = MenuBar->addMenu("文件");
+    //工具栏  可以有多个
+    QToolBar *toolBar = new QToolBar(this);
+    //创建按钮
+    QPushButton *Button = new QPushButton("按钮",this);
+
+    //创建菜单项
+    FileMenu->addAction("新建");
+    //添加分隔符
+    FileMenu->addSeparator();
+    FileMenu->addAction("打开");
+
+
+
+    addToolBar(Qt::LeftToolBarArea,toolBar);
+
+    //后期设置成允许上下左右停靠
+    toolBar->setAllowedAreas((Qt::ToolBarArea)0xF);
+    //总开关，允许移动
+    toolBar->setMovable(true);
+    //设置浮动
+    toolBar->setFloatable(true);
+
+    //工具栏中可以设置内容
+    toolBar->addAction("打开");
+    toolBar->addSeparator();
+    toolBar->addAction("新建");
+    toolBar->addWidget(Button);
+
+    //创建状态栏
+    QStatusBar *stBar = statusBar();
+    setStatusBar(stBar);
+    //创建标签
+    QLabel *label = new QLabel("Caution",this);
+    QLabel *label2 = new QLabel("Caution",this);
+    //添加标签
+    stBar->addWidget(label);
+    //添加右侧便签
+    stBar->addPermanentWidget(label2);
+
+    //创建铆接部件(浮动窗口) 可以有多个
+    QDockWidget *dock = new QDockWidget("浮动",this);
+    addDockWidget(Qt::RightDockWidgetArea,dock);
+
+    //设置中心部件 只有一个
+    QTextEdit *textedit = new QTextEdit("Text",this);
+    setCentralWidget(textedit);
+```
+
+#### 添加资源文件
+
+![image-20241026233731811](./assets/image-20241026233731811.png)
+
+使用类似该方式进行添加：`ui->actionNew_File->setIcon(QIcon(":/image-20240926172413577.png"));`
+
+
+
+
+
+
 
 
 
