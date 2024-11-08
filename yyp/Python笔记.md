@@ -2,6 +2,30 @@
 
 
 
+
+
+## 其他
+
+
+
+### 返回值类型指定
+
+python中可以指定函数的返回值类型，帮助IDE确定返回值的类型，例如
+
+```
+def relative_to_assets(path: str) -> Path:
+    return fmc_eth_tool.ASSETS_PATH / Path(path)
+```
+
+里面的`->`就是用于指定函数返回值类型为`Path`
+
+与静态类型检查工具配合：
+
+- 工具如 `mypy` 可以使用类型提示来在运行前检查代码中是否存在类型不匹配的问题。
+- 例如，如果你尝试将 `relative_to_assets` 的返回值赋值给一个变量，且该变量被声明为非 `Path` 类型，`mypy` 会发出警告。
+
+
+
 ## 变量定义：
 
 在 Python 中，变量定义非常简单，不需要指定类型，Python 会自动根据赋值来推断变量的类型。以下是 Python 变量定义的基本规则和示例：
