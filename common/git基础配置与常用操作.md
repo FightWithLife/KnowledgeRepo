@@ -160,11 +160,45 @@ git diff <branch-name> origin/<branch-name>#差异
 
 
 
+### `git`仓库中包含其他`github`仓库的方式
 
+`git`中包含其他项目的仓库以便使用，可以使用`submodule`
 
+具体使用方式如下：
 
+1. 使用如下命令添加`git submodule add <url> path/to/submodule`
+2. 添加之后，本地`git`仓库会克隆目标`url`至本地，同时远程仓库会添加该链接
 
+>  其余设备拉取远程仓库后，需要使用命令`git submodule init`初始化该子模块
+>
+> 之后使用`git submodule update`更新，就会拉取该子模块远程仓库的最新分支
+>
+> 这两个命令可以使用如下命令一次性执行：
+>
+> `git submodule update --init`
 
+若是使用添加命令的时候添加了无效的`url`，运行`git submodule update --init`的时候就会报错，提示`url`无效，此时可以删除该`submodule`
+
+命令：
+
+```shell
+git rm --cached path/to/submodule
+```
+
+该命令从缓存中删除子模块在父仓库中的引用
+
+然后执行命令：
+
+```shell
+rm -rf path/to/submodule
+```
+
+删除之后提交更改就可以同步到远程仓库
+
+```
+git commit -m "remove submodule"
+git push origin master
+```
 
 
 
