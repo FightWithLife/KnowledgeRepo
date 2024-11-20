@@ -446,15 +446,160 @@ print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 
 
 
+# Python编程
 
 
 
+## Cve处理脚本代码解析及API调用记录
 
 
 
+### CveCompareTool.py
 
+```python
+import pandas as pd
 
+# 读取文件A和文件B
+file_a = 'FLC_ALL_CVE_Handle_Report-V1.0.xlsx'  # Excel文件路径
+file_b = 'cve_unique.csv'   # CSV文件路径
 
+# 读取文件A (Excel)
+df_a = pd.read_excel(file_a)
+
+# 读取文件B (CSV)，并指定编码以避免读取错误
+df_b = pd.read_csv(file_b, encoding='utf-8')  # 根据需要修改编码，如 'gbk'
+
+# 确保文件A和文件B中存在 "漏洞ID" 这一列
+if '漏洞ID' not in df_a.columns or '漏洞ID' not in df_b.columns:
+    raise ValueError("两个文件都必须包含 '漏洞ID' 列")
+
+# 处理空值，删除 "漏洞ID" 列为空的行
+df_a = df_a.dropna(subset=['漏洞ID'])
+df_b = df_b.dropna(subset=['漏洞ID'])
+
+# 获取 "漏洞ID" 列，并找到匹配的行
+matching_rows = pd.merge(df_a, df_b, on='漏洞ID', how='inner')  # 找到ID相同的行
+
+# 写入到 Processed.xlsx 文件
+matching_rows.to_excel('Processed.xlsx', index=False)
+
+# 找到在文件B中没有匹配的行
+untreated_rows = df_b[~df_b['漏洞ID'].isin(df_a['漏洞ID'])]
+
+# 写入到 untreated.xlsx 文件
+untreated_rows.to_excel('untreated.xlsx', index=False)
+
+print("处理完成，结果已保存到 'Processed.xlsx' 和 'untreated.xlsx'。")
+
+```
+
+#### `read_excel`/`read_csv`
+
+其中`pd.read_excel(file_a)`将通过`read_excel`读取文件`A`，将其内容加载到一个`pandas DataFrame`对象里
+
+这个对象将成为一个二维的表格，每一列都可以通过列名访问。
+
+上面两个函数功能类似，只不过针对的文件格式不同。
+
+```
+read_excel:xls.xlsx
+read_csv:csv
+```
+
+在 `pandas` 中，可以通过列名来访问 DataFrame 中的某一列或某个元素。以下是一些常用的操作：
+
+##### 1. **访问某一列的所有数据**
+你可以通过列名来访问 DataFrame 中的某一列，这会返回该列的数据作为 `pandas` Series 对象。
+
+假设 `df_a` 是你读取的 DataFrame，且有一列名为 `漏洞ID`，你可以通过以下方法来访问该列的所有数据：
+
+```python
+# 访问 "漏洞ID" 列的所有数据
+漏洞ID列 = df_a['漏洞ID']
+```
+
+这会返回 `df_a` 中 `漏洞ID` 列的所有数据，类型是 `pandas.Series`。你可以像处理列表一样对其进行操作。
+
+##### 2. **访问某个元素**
+如果你想访问某一行和某一列的交点元素，可以使用 `.loc[]` 或 `.iloc[]` 来按行列索引进行访问。
+
+- 使用 `.loc[]` 根据标签（行名和列名）访问：
+  ```python
+  # 获取第1行 "漏洞ID" 列的值
+  value = df_a.loc[0, '漏洞ID']
+  ```
+
+  这里，`0` 是行的标签，`'漏洞ID'` 是列的标签。`loc[]` 用于通过标签定位。
+
+- 使用 `.iloc[]` 根据行号和列号（位置索引）访问：
+  ```python
+  # 获取第1行第1列的值
+  value = df_a.iloc[0, 0]
+  ```
+
+  `iloc[]` 用于基于整数位置进行定位，`0` 是行和列的索引位置（从0开始）。
+
+##### 3. **访问多列的数据**
+你也可以通过一个列名列表来访问多个列的数据，返回一个新的 DataFrame：
+
+```python
+# 访问 "漏洞ID" 和 "其他列" 两列的数据
+多列数据 = df_a[['漏洞ID', '其他列']]
+```
+
+##### 4. **通过条件过滤数据**
+你还可以通过条件来访问特定行的数据。例如，获取 `漏洞ID` 列中值等于某个特定值的行：
+
+```python
+# 访问 "漏洞ID" 列等于某个值的行
+filtered_data = df_a[df_a['漏洞ID'] == 'CVE-2020-12345']
+```
+
+##### 总结：
+- 通过 `df['列名']` 获取某一列的数据。
+- 通过 `df.loc[行标签, 列名]` 获取某一特定单元格的数据。
+- 通过 `df.iloc[行索引, 列索引]` 通过整数索引获取某一特定单元格的数据。
+- 通过条件过滤 `df[df['列名'] == '某个值']` 获取符合条件的行数据。
+
+#### **匹配列中相同的行`pd.merge`**
+
+```
+matching_rows = pd.merge(df_a, df_b, on='漏洞ID', how='inner')
+```
+
+- matching_rows = pd.merge(df_a, df_b, on='漏洞ID', how='inner')：使用`pandas` 的`merge` 函数，按 "漏洞ID" 列将两个 `DataFrame`
+
+  （`df_a` 和`df_b`）进行合并：
+
+  - `on='漏洞ID'` 表示合并时要根据 "漏洞ID" 列进行匹配。
+  - `how='inner'` 表示使用 **内连接**（`inner join`），即只保留两个文件中都有的 "漏洞ID" 行（即匹配的行）。
+
+- `matching_rows` 将包含文件A和文件B中都有的 "漏洞ID" 行。
+
+#### 将对应的内容保存到`excel`
+
+```python
+matching_rows.to_excel('Processed.xlsx', index=False)
+```
+
+`matching_rows.to_excel('Processed.xlsx', index=False)`：将 `matching_rows` 中的内容写入到一个新的 Excel 文件 `Processed.xlsx`。`index=False` 表示在输出时不保存行索引。
+
+> 此处不保存行索引指的是写入的时候不保存对应的索引信息
+>
+> 也就是程序中的`DataFrame`原本的数据应该是：1、a 2、b
+>
+> 此时不保存索引就是将1、2这种信息去掉，只留下a、b这样的信息，然后写入。
+
+#### 在文件B中寻找未匹配的行
+
+```python
+untreated_rows = df_b[~df_b['漏洞ID'].isin(df_a['漏洞ID'])]
+```
+
+`untreated_rows = df_b[~df_b['漏洞ID'].isin(df_a['漏洞ID'])]`：从文件B（`df_b`）中筛选出那些 "漏洞ID" 列的值没有出现在文件A（`df_a`）中的行。
+
+- `df_b['漏洞ID'].isin(df_a['漏洞ID'])` 会返回一个布尔系列（`True` 或 `False`），表示文件B中的 "漏洞ID" 是否存在于文件A的 "漏洞ID" 列中。
+- `~` 是逻辑取反操作符，表示选择文件B中没有匹配的行。
 
 
 
