@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "20250227222908",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -177,8 +177,20 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "638a86a6a3e12f3c",
+  "active": "afeeb3473061bcb9",
   "lastOpenFiles": [
+    "assets/Pasted image 20250227222948.png",
+    "note/软考/计算机组成与体系结构.md",
+    "assets/Pasted image 20250227222908.png",
+    "assets/Pasted image 20250227223357.png",
+    "assets/Pasted image 20250227223031.png",
+    "assets/Pasted image 20250227222741.png",
+    "assets/Pasted image 20250227221531.png",
+    "assets/Pasted image 20250227215319.png",
+    "assets/Pasted image 20250227214438.png",
+    "assets/Pasted image 20250227214220.png",
+    "assets/Pasted image 20250227212414.png",
+    "note/杂项问题汇总.md",
     "assets"
   ]
 }

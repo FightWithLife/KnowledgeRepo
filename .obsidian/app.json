@@ -1,4 +1,5 @@
 {
   "attachmentFolderPath": "assets",
-  "uriCallbacks": true
+  "uriCallbacks": true,
+  "promptDelete": false
 }
