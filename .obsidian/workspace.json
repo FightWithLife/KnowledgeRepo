@@ -8,17 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "afeeb3473061bcb9",
+            "id": "baad4dd0912f211c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/软考/计算机组成与体系结构.md",
+                "file": "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "计算机组成与体系结构"
+              "title": "软考-软件设计师-笔记"
+            }
+          },
+          {
+            "id": "0097ebe10494761a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "软件设计师讲义"
             }
           }
         ]
@@ -140,12 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "软考-软件设计师-笔记 的大纲"
             }
           },
           {
@@ -177,20 +192,38 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "afeeb3473061bcb9",
+  "active": "baad4dd0912f211c",
   "lastOpenFiles": [
-    "assets/Pasted image 20250227223031.png",
-    "assets/Pasted image 20250227223357.png",
-    "assets/Pasted image 20250227230342.png",
-    "assets/Pasted image 20250227215319.png",
-    "assets/Pasted image 20250227221531.png",
-    "assets/Pasted image 20250227222741.png",
+    "assets/Pasted image 20250303212751.png",
+    "assets/Pasted image 20250303212749.png",
+    "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
+    "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
+    "assets/Pasted image 20250302212444.png",
     "note/软考/计算机组成与体系结构.md",
-    "assets/Pasted image 20250227222948.png",
-    "assets/Pasted image 20250227222908.png",
-    "assets/Pasted image 20250227214438.png",
-    "assets/Pasted image 20250227214220.png",
+    "note/daily/2025-03-02.md",
+    "note/daily",
+    "note/未命名.md",
+    "assets/Pasted image 20250301224237.png",
+    "assets/Pasted image 20250301224050.png",
+    "assets/Pasted image 20250301223854.png",
+    "assets/Pasted image 20250301223851.png",
+    "assets/Pasted image 20250301223820.png",
+    "assets/Pasted image 20250301223726.png",
+    "assets/Pasted image 20250301222937.png",
+    "assets/Pasted image 20250301222934.png",
     "note/杂项问题汇总.md",
-    "assets"
+    "note/linux内核设计.md",
+    "note/软考/zst笔记.md",
+    "note/软考/软考笔记—作者：顾梦/assets/image-20230415171040969-1690253559764-92.png#id=lAkvr&originHeight=495&originWidth=888&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
+    "note/软考/软考笔记—作者：顾梦/assets/image-20230415171040969-1690253552303-91.png#id=lAkvr&originHeight=495&originWidth=888&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
+    "note/软考/软考笔记—作者：顾梦/assets",
+    "note/软考/软考笔记—作者：顾梦",
+    "note/软考/zst讲义—作者：理想/assets",
+    "note/软考/zst讲义—作者：理想",
+    "zst讲义—作者：理想/软件设计师讲义.md",
+    "zst讲义—作者：理想/assets",
+    "zst讲义—作者：理想",
+    "软考笔记—作者：顾梦/assets/image-20230415171040969-1690253559764-92.png#id=lAkvr&originHeight=495&originWidth=888&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
+    "软考笔记—作者：顾梦/软考-软件设计师-笔记.md"
   ]
 }

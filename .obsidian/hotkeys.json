@@ -44,5 +44,13 @@
       ],
       "key": "T"
     }
+  ],
+  "outline:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "."
+    }
   ]
 }

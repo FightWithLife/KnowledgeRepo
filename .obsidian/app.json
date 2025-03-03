@@ -1,5 +1,8 @@
 {
   "attachmentFolderPath": "assets",
   "uriCallbacks": true,
-  "promptDelete": false
+  "promptDelete": true,
+  "newFileLocation": "current",
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
 }
