@@ -35,8 +35,7 @@
               "title": "软件设计师讲义"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -155,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
+                "file": "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "软件设计师讲义 的大纲"
+              "title": "软考-软件设计师-笔记 的大纲"
             }
           },
           {
@@ -193,8 +192,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "2a1e1cd1084eb3b0",
+  "active": "baad4dd0912f211c",
   "lastOpenFiles": [
+    "assets/Pasted image 20250307210859.png",
+    "assets/Pasted image 20250307210328.png",
+    "assets/Pasted image 20250307210131.png",
+    "assets/Pasted image 20250307205843.png",
+    "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
     "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
     "assets/Pasted image 20250306222619.png",
     "assets/Pasted image 20250306222554.png",
@@ -203,10 +207,6 @@
     "assets/Pasted image 20250306221343.png",
     "assets/Pasted image 20250306220214.png",
     "assets/Pasted image 20250306220211.png",
-    "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
-    "assets/Pasted image 20250306215011.png",
-    "assets/Pasted image 20250306214552.png",
-    "assets/Pasted image 20250306214549.png",
     "note/软考/计算机组成与体系结构.md",
     "note/软考/软考笔记—作者：顾梦/未命名.md",
     "note/daily/2025-03-02.md",
