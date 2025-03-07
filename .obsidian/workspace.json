@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "baad4dd0912f211c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "软考-软件设计师-笔记"
-            }
-          },
-          {
             "id": "2a1e1cd1084eb3b0",
             "type": "leaf",
             "state": {
@@ -34,8 +20,23 @@
               "icon": "lucide-file",
               "title": "软件设计师讲义"
             }
+          },
+          {
+            "id": "a4feda2473a81c3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "软考-软件设计师-笔记"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,21 +193,20 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "baad4dd0912f211c",
+  "active": "a4feda2473a81c3e",
   "lastOpenFiles": [
+    "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
+    "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
+    "assets/Pasted image 20250307235600.png",
+    "assets/Pasted image 20250307235330.png",
+    "assets/Pasted image 20250307234658.png",
+    "assets/Pasted image 20250307233744.png",
     "assets/Pasted image 20250307231545.png",
     "assets/37f6871e994079bd916794051a8238c.jpg",
     "assets/Pasted image 20250307230508.png",
     "assets/Pasted image 20250307222217.png",
     "assets/Pasted image 20250307220923.png",
     "assets/Pasted image 20250307210859.png",
-    "assets/Pasted image 20250307210328.png",
-    "assets/Pasted image 20250307210131.png",
-    "assets/Pasted image 20250307205843.png",
-    "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
-    "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
-    "assets/Pasted image 20250306222619.png",
-    "assets/Pasted image 20250306222554.png",
     "note/软考/计算机组成与体系结构.md",
     "note/软考/软考笔记—作者：顾梦/未命名.md",
     "note/daily/2025-03-02.md",
