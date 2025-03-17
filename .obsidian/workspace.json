@@ -34,21 +34,9 @@
               "icon": "lucide-file",
               "title": "软考-软件设计师-笔记"
             }
-          },
-          {
-            "id": "68123c840c311737",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.9"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,12 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "软考-软件设计师-笔记 的大纲"
             }
           },
           {
@@ -204,8 +193,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "68123c840c311737",
+  "active": "a4feda2473a81c3e",
   "lastOpenFiles": [
+    "assets/Pasted image 20250317222140.png",
+    "assets/Pasted image 20250317221341.png",
     "assets/Pasted image 20250316230905.png",
     "assets/Pasted image 20250316225638.png",
     "assets/Pasted image 20250316225420.png",
@@ -215,8 +206,6 @@
     "assets/Pasted image 20250316225016.png",
     "assets/Pasted image 20250316224925.png",
     "assets/Pasted image 20250316224901.png",
-    "assets/Pasted image 20250316224847.png",
-    "assets/Pasted image 20250316224759.png",
     "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
     "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
     "note/软考/计算机组成与体系结构.md",
