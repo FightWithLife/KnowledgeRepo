@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "软考-软件设计师-笔记"
             }
+          },
+          {
+            "id": "68123c840c311737",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -155,13 +167,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "软考-软件设计师-笔记 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -193,7 +204,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "a4feda2473a81c3e",
+  "active": "68123c840c311737",
   "lastOpenFiles": [
     "assets/Pasted image 20250316230905.png",
     "assets/Pasted image 20250316225638.png",
