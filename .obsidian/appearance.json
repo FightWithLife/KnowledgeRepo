@@ -1,6 +1,8 @@
 {
-  "cssTheme": "Obuntu",
+  "cssTheme": "ITS Theme",
   "interfaceFontFamily": "LXGW WenKai Light,宋体",
   "textFontFamily": "LXGW WenKai Light,宋体",
-  "monospaceFontFamily": "LXGW WenKai LIght,宋体"
+  "monospaceFontFamily": "LXGW WenKai LIght,宋体",
+  "theme": "moonstone",
+  "accentColor": "#4796e1"
 }
