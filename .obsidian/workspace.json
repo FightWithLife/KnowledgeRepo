@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
+                "file": "note/TypeScript/环境搭建.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "软考-软件设计师-笔记"
+              "title": "环境搭建"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
+                "file": "note/TypeScript/环境搭建.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "软考-软件设计师-笔记 的大纲"
+              "title": "环境搭建 的大纲"
             }
           },
           {
@@ -195,6 +195,9 @@
   },
   "active": "a4feda2473a81c3e",
   "lastOpenFiles": [
+    "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
+    "note/TypeScript/环境搭建.md",
+    "note/TypeScript",
     "assets/Pasted image 20250327231005.png",
     "assets/Pasted image 20250327224012.png",
     "assets/Pasted image 20250327222851.png",
@@ -205,9 +208,7 @@
     "assets/Pasted image 20250326234323.png",
     "assets/Pasted image 20250326234233.png",
     "assets/Pasted image 20250326233258.png",
-    "assets/Pasted image 20250326233012.png",
     "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
-    "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
     "note/软考/计算机组成与体系结构.md",
     "note/软考/软考笔记—作者：顾梦/未命名.md",
     "note/daily/2025-03-02.md",
@@ -225,7 +226,6 @@
     "zst讲义—作者：理想/软件设计师讲义.md",
     "zst讲义—作者：理想/assets",
     "zst讲义—作者：理想",
-    "软考笔记—作者：顾梦/assets/image-20230415171040969-1690253559764-92.png#id=lAkvr&originHeight=495&originWidth=888&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
     "软考笔记—作者：顾梦/软考-软件设计师-笔记.md"
   ]
 }
