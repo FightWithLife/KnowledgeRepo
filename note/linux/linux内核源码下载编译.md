@@ -216,7 +216,7 @@ make install
 
       update-grub2
 
-![img](./assets/8f8a41a9655827db8c15a333375a7b37.png)
+![img](8f8a41a9655827db8c15a333375a7b37.png)
 
 3、修改默认启动菜单的配置文件
 
@@ -227,13 +227,13 @@ make install
 
    `GTUB_DEFAULT`=0，表示从第一个内核启动（`linux-5.8.7`位于第一个）。
 
-![img](./assets/04177d90fc1e10e0afbb360517383019.png)
+![img](04177d90fc1e10e0afbb360517383019.png)
 
 保存修改，重启系统，可看到启动菜单项。选择advanced，进入后选择刚编译安装好的内核进入即可。
 
-![img](./assets/f4fdf0ace07154ca96e9be6ffc4d7f09.png)
+![img](f4fdf0ace07154ca96e9be6ffc4d7f09.png)
 
-![img](./assets/be4fca6285361af88f01f2eb4ecb4e4c.png)
+![img](be4fca6285361af88f01f2eb4ecb4e4c.png)
 
 进入后确认内核版本是否正确：`uname -r`
 

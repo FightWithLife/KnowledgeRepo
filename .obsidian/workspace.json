@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/TypeScript/环境搭建.md",
+                "file": "note/OS/FileSystem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "环境搭建"
+              "title": "FileSystem"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/TypeScript/环境搭建.md",
+                "file": "note/OS/FileSystem.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "环境搭建 的大纲"
+              "title": "FileSystem 的大纲"
             }
           },
           {
@@ -195,8 +195,19 @@
   },
   "active": "a4feda2473a81c3e",
   "lastOpenFiles": [
-    "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
+    "note/lauguage/Python笔记.md",
+    "note/OS/FileSystem.md",
+    "note/OS",
+    "note/lauguage",
+    "note/README.md",
+    "note/lauguage/shell学习.md",
+    "note/linux/linux内核源码下载编译.md",
+    "note/misc/蜂窝网络相关.md",
+    "note/linux",
     "note/TypeScript/环境搭建.md",
+    "note/misc",
+    "note/未命名.md",
+    "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
     "note/TypeScript",
     "assets/Pasted image 20250327231005.png",
     "assets/Pasted image 20250327224012.png",
@@ -213,19 +224,14 @@
     "note/软考/软考笔记—作者：顾梦/未命名.md",
     "note/daily/2025-03-02.md",
     "note/daily",
-    "note/未命名.md",
-    "note/杂项问题汇总.md",
-    "note/linux内核设计.md",
+    "note/misc/杂项问题汇总.md",
+    "note/linux/linux内核设计.md",
     "note/软考/zst笔记.md",
     "note/软考/软考笔记—作者：顾梦/assets/image-20230415171040969-1690253559764-92.png#id=lAkvr&originHeight=495&originWidth=888&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
     "note/软考/软考笔记—作者：顾梦/assets/image-20230415171040969-1690253552303-91.png#id=lAkvr&originHeight=495&originWidth=888&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
     "note/软考/软考笔记—作者：顾梦/assets",
     "note/软考/软考笔记—作者：顾梦",
-    "note/软考/zst讲义—作者：理想/assets",
-    "note/软考/zst讲义—作者：理想",
     "zst讲义—作者：理想/软件设计师讲义.md",
-    "zst讲义—作者：理想/assets",
-    "zst讲义—作者：理想",
     "软考笔记—作者：顾梦/软考-软件设计师-笔记.md"
   ]
 }
