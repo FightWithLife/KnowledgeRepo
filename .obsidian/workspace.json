@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/OS/FileSystem.md",
+                "file": "note/I.MX.6ULL/开发板环境搭建.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FileSystem"
+              "title": "开发板环境搭建"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/OS/FileSystem.md",
+                "file": "note/I.MX.6ULL/开发板环境搭建.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "FileSystem 的大纲"
+              "title": "开发板环境搭建 的大纲"
             }
           },
           {
@@ -195,8 +195,10 @@
   },
   "active": "a4feda2473a81c3e",
   "lastOpenFiles": [
-    "note/lauguage/Python笔记.md",
     "note/OS/FileSystem.md",
+    "note/I.MX.6ULL/开发板环境搭建.md",
+    "note/I.MX.6ULL",
+    "note/lauguage/Python笔记.md",
     "note/OS",
     "note/lauguage",
     "note/README.md",
@@ -230,7 +232,6 @@
     "note/软考/软考笔记—作者：顾梦/assets/image-20230415171040969-1690253559764-92.png#id=lAkvr&originHeight=495&originWidth=888&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
     "note/软考/软考笔记—作者：顾梦/assets/image-20230415171040969-1690253552303-91.png#id=lAkvr&originHeight=495&originWidth=888&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
     "note/软考/软考笔记—作者：顾梦/assets",
-    "note/软考/软考笔记—作者：顾梦",
     "zst讲义—作者：理想/软件设计师讲义.md",
     "软考笔记—作者：顾梦/软考-软件设计师-笔记.md"
   ]
