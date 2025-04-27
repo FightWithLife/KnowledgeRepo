@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
+                "file": "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0427.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BSP工具链下载"
+              "title": "0427"
+            }
+          },
+          {
+            "id": "c6c9a70646c4200e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
             }
           },
           {
@@ -37,7 +49,8 @@
               "title": "嵌入式Linux应用开发完全手册V5.2_IMX6ULL_Pro开发板"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -197,11 +210,17 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "2a1e1cd1084eb3b0",
+  "active": "c6c9a70646c4200e",
   "lastOpenFiles": [
+    "assets/Pasted image 20250427222327.png",
+    "assets/Pasted image 20250427222126.png",
+    "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
+    "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0427.md",
+    "note/I.MX.6ULL/韦东山视频笔记/应用开发/未命名.md",
+    "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记",
+    "note/I.MX.6ULL/韦东山视频笔记/应用开发",
     "assets/Pasted image 20250411002143.png",
     "common/软件激活.md",
-    "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
     "note/I.MX.6ULL/韦东山视频笔记/嵌入式Linux应用开发完全手册V5.2_IMX6ULL_Pro开发板.pdf",
     "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
     "note/I.MX.6ULL/韦东山视频笔记/课程体系.md",
@@ -224,19 +243,15 @@
     "note/misc",
     "note/未命名.md",
     "note/软考/软考笔记—作者：顾梦/软考-软件设计师-笔记.md",
-    "note/TypeScript",
     "assets/Pasted image 20250327231005.png",
     "assets/Pasted image 20250327224012.png",
     "assets/Pasted image 20250327222851.png",
     "assets/Pasted image 20250327222411.png",
     "assets/Pasted image 20250326235445.png",
     "assets/Pasted image 20250326234730.png",
-    "assets/Pasted image 20250326234705.png",
-    "assets/Pasted image 20250326234323.png",
     "note/软考/计算机组成与体系结构.md",
     "note/软考/软考笔记—作者：顾梦/未命名.md",
     "note/daily/2025-03-02.md",
-    "note/daily",
     "note/misc/杂项问题汇总.md",
     "note/linux/linux内核设计.md",
     "note/软考/zst笔记.md",
