@@ -20,37 +20,8 @@
               "icon": "lucide-file",
               "title": "0427"
             }
-          },
-          {
-            "id": "c6c9a70646c4200e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
-            }
-          },
-          {
-            "id": "a4feda2473a81c3e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "note/I.MX.6ULL/韦东山视频笔记/嵌入式Linux应用开发完全手册V5.2_IMX6ULL_Pro开发板.pdf",
-                "page": 87,
-                "left": -12,
-                "top": 789,
-                "zoom": 1.2736847409796412
-              },
-              "icon": "lucide-file-text",
-              "title": "嵌入式Linux应用开发完全手册V5.2_IMX6ULL_Pro开发板"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "20250227222908",
+                "query": "语法错误",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -169,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
+                "file": "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0427.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "BSP工具链下载 的大纲"
+              "title": "0427 的大纲"
             }
           },
           {
@@ -189,7 +160,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -210,19 +181,20 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "c6c9a70646c4200e",
+  "active": "638a86a6a3e12f3c",
   "lastOpenFiles": [
+    "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
+    "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0427.md",
+    "assets/Pasted image 20250427225057.png",
     "assets/Pasted image 20250427222327.png",
     "assets/Pasted image 20250427222126.png",
     "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
-    "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0427.md",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/未命名.md",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发",
     "assets/Pasted image 20250411002143.png",
     "common/软件激活.md",
     "note/I.MX.6ULL/韦东山视频笔记/嵌入式Linux应用开发完全手册V5.2_IMX6ULL_Pro开发板.pdf",
-    "note/软考/zst讲义—作者：理想/软件设计师讲义.md",
     "note/I.MX.6ULL/韦东山视频笔记/课程体系.md",
     "note/I.MX.6ULL/嵌入式Linux应用开发完全手册V5.2_IMX6ULL_Pro开发板.pdf",
     "assets/Pasted image 20250409232325.png",
@@ -247,8 +219,6 @@
     "assets/Pasted image 20250327224012.png",
     "assets/Pasted image 20250327222851.png",
     "assets/Pasted image 20250327222411.png",
-    "assets/Pasted image 20250326235445.png",
-    "assets/Pasted image 20250326234730.png",
     "note/软考/计算机组成与体系结构.md",
     "note/软考/软考笔记—作者：顾梦/未命名.md",
     "note/daily/2025-03-02.md",
