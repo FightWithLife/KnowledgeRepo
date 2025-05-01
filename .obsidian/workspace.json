@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
+                "file": "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0501.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BSP工具链下载"
+              "title": "0501"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
+                "file": "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0501.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "BSP工具链下载 的大纲"
+              "title": "0501 的大纲"
             }
           },
           {
@@ -183,6 +183,7 @@
   },
   "active": "2a1e1cd1084eb3b0",
   "lastOpenFiles": [
+    "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0501.md",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/GCC工具.md",
     "note/I.MX.6ULL/韦东山视频笔记/课程体系.md",
@@ -195,7 +196,6 @@
     "assets/Pasted image 20250427225057.png",
     "assets/Pasted image 20250427222327.png",
     "assets/Pasted image 20250427222126.png",
-    "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发",
     "assets/Pasted image 20250411002143.png",
