@@ -1,8 +1,8 @@
 {
-  "cssTheme": "Things",
+  "cssTheme": "Minimal",
   "interfaceFontFamily": "LXGW WenKai Light,宋体",
   "textFontFamily": "LXGW WenKai Light,宋体",
   "monospaceFontFamily": "LXGW WenKai LIght,宋体",
-  "theme": "obsidian",
+  "theme": "moonstone",
   "accentColor": "#40b8ba"
 }
