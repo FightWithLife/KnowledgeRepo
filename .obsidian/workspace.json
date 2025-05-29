@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/linux/Linux基础/Linux内存管理.md",
+                "file": "note/linux/Linux基础/Linux进程管理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux内存管理"
+              "title": "Linux进程管理"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/linux/Linux基础/Linux内存管理.md",
+                "file": "note/linux/Linux基础/Linux进程管理.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Linux内存管理 的大纲"
+              "title": "Linux进程管理 的大纲"
             }
           },
           {
@@ -183,8 +183,10 @@
   },
   "active": "2a1e1cd1084eb3b0",
   "lastOpenFiles": [
-    "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0501.md",
+    "assets/Pasted image 20250529213215.png",
     "note/linux/Linux基础/Linux内存管理.md",
+    "note/linux/Linux基础/Linux进程管理.md",
+    "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0501.md",
     "note/linux/Linux基础",
     "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/GCC工具.md",
@@ -226,8 +228,6 @@
     "note/daily/2025-03-02.md",
     "note/misc/杂项问题汇总.md",
     "note/linux/linux内核设计.md",
-    "note/软考/zst笔记.md",
-    "zst讲义—作者：理想/软件设计师讲义.md",
-    "软考笔记—作者：顾梦/软考-软件设计师-笔记.md"
+    "note/软考/zst笔记.md"
   ]
 }
