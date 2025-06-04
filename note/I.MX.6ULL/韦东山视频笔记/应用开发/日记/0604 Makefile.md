@@ -24,10 +24,26 @@ $(foreach var,list,text)
 **用法**：
 	`$(filter patten..., text)`
 
+## filter-out
 
+**作用**：
+	在text中取出不符合patten格式的值
 
+**用法**：
+	同filter
 
+**用法示例**:
+![[Pasted image 20250604225947.png]]
 
+## wildcard
+
+**作用**：
+	取出目录下符合pattern格式的文件
+
+**用法**：
+	$(wildcard pattern)
+**用法示例**：
+![[Pasted image 20250604230312.png]]
 
 
 
