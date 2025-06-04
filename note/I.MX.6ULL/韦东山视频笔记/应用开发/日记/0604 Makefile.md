@@ -16,7 +16,13 @@ $(foreach var,list,text)
 使用示例：
 ![[Pasted image 20250604220609.png]]
 
+## filter
 
+**作用**：
+	在text中取出符合patten格式的值
+
+**用法**：
+	`$(filter patten..., text)`
 
 
 
