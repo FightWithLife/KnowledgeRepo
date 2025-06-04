@@ -22,7 +22,7 @@ $(foreach var,list,text)
 	在text中取出符合patten格式的值
 
 **用法**：
-	`$(filter patten..., text)`
+	$(filter patten..., text)
 
 ## filter-out
 
@@ -44,7 +44,19 @@ $(foreach var,list,text)
 	$(wildcard pattern)
 **用法示例**：
 ![[Pasted image 20250604230312.png]]
+使用示例2
+![[Pasted image 20250604231521.png]]
 
+## patsubst
+
+**作用**：
+	把var中pattern格式的变量修改为replacement格式
+
+**用法**：
+	$(patsubst pattern, replacement, $(var))
+
+**使用示例**：
+![[Pasted image 20250604232341.png]]
 
 
 
