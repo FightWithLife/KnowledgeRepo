@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/250610 Hello驱动.md",
+                "file": "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/250611 驱动编译环境搭建.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "250610 Hello驱动"
+              "title": "250611 驱动编译环境搭建"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/250610 Hello驱动.md",
+                "file": "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/250611 驱动编译环境搭建.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "250610 Hello驱动 的大纲"
+              "title": "250611 驱动编译环境搭建 的大纲"
             }
           },
           {
@@ -183,9 +183,10 @@
   },
   "active": "2a1e1cd1084eb3b0",
   "lastOpenFiles": [
+    "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/250610 Hello驱动.md",
+    "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/250611 驱动编译环境搭建.md",
     "assets/Pasted image 20250610231224.png",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/Makefile规则.md",
-    "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/250610 Hello驱动.md",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0501 Makefile.md",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0427 GCC编译器.md",
     "note/I.MX.6ULL/韦东山视频笔记/应用开发/日记/0604 Makefile.md",
@@ -204,7 +205,6 @@
     "note/linux/linux驱动.md",
     "note/linux/linux内核源码下载编译.md",
     "note/linux/Linux基础/Linux进程管理.md",
-    "assets/Pasted image 20250529214259.png",
     "note/linux/Linux基础/Linux内存管理.md",
     "note/linux/Linux基础",
     "note/I.MX.6ULL/韦东山视频笔记/BSP工具链下载.md",
