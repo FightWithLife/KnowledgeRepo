@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/daily/2025-06-28 EDA课程学习.md",
+                "file": "note/daily/2025-07-01 EDA课程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-28 EDA课程学习"
+              "title": "2025-07-01 EDA课程"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/daily/2025-06-28 EDA课程学习.md",
+                "file": "note/daily/2025-07-01 EDA课程.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-06-28 EDA课程学习 的大纲"
+              "title": "2025-07-01 EDA课程 的大纲"
             }
           },
           {
@@ -183,8 +183,10 @@
   },
   "active": "2a1e1cd1084eb3b0",
   "lastOpenFiles": [
-    "note/daily/2025-06-14 EDA课程学习.md",
+    "assets/Pasted image 20250701152540.png",
+    "note/daily/2025-07-01 EDA课程.md",
     "note/daily/2025-06-28 EDA课程学习.md",
+    "note/daily/2025-06-14 EDA课程学习.md",
     "assets/Pasted image 20250614213458.png",
     "assets/Pasted image 20250614213441.png",
     "assets/Pasted image 20250614211501.png",
@@ -226,8 +228,6 @@
     "note/lauguage",
     "note/README.md",
     "note/lauguage/shell学习.md",
-    "note/misc/蜂窝网络相关.md",
-    "note/linux",
-    "note/TypeScript/环境搭建.md"
+    "note/linux"
   ]
 }
